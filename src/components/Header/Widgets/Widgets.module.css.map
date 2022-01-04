@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAMhB;;AAVD,AAKI,eALW,CAKX,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "Widgets.module.scss"
+    ],
+    "names": [],
+    "file": "Widgets.module.css"
+}

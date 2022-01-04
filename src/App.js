@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import Header from "./components/Header/Header";
+import Instructions from "./components/Instructions/Instructions";
+import StudentDetails from "./components/StudentData/StudentDetails";
+import StudentProvider from "./store/student-provider";
+import StudentContext from "./store/student-context";
+import Result from "./components/Result/Result";
+import ImageCapture from "./components/ImageCapture/ImageCapture";
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StudentProvider>
+      <div className="App">
+        <div className="header">
+          <Header visibleBMI={false} />
+        </div>
+        <div className="body">
+          <div className="text">
+            <div className="studentdata">
+              <ImageCapture />
+            </div>
+            <div className="instruction">
+              <Instructions />
+            </div>
+          </div>
+          <div className="imagecapture">
+            <Result />
+          </div>
+        </div>
+      </div>
+    </StudentProvider>
   );
 }
-
+App.defaultProps = {
+  isCameraVisible: true,
+};
 export default App;

@@ -1,0 +1,16 @@
+.student-data-wrapper .student-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+.student-data-wrapper .student-data .label {
+  margin: 5px;
+  width: 35%;
+}
+
+.student-data-wrapper .student-data select {
+  width: 50%;
+}
+/*# sourceMappingURL=StudentDetails.module.css.map */

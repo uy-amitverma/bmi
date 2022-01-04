@@ -1,0 +1,115 @@
+.image-capture-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-capture-wrapper .measureImg {
+  height: 100%;
+  width: 15%;
+  margin-left: -44px;
+}
+
+.image-capture-wrapper .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 89%;
+}
+
+.image-capture-wrapper .image-container .weightImg {
+  width: 400px;
+}
+
+.image-capture-wrapper .image-container .calculation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 50%;
+  height: 40%;
+}
+
+.image-capture-wrapper .image-container .calculation .calculationImg {
+  width: 200px;
+  padding-bottom: 30px;
+}
+
+.image-capture-wrapper .image-container .calculation .cloudImg {
+  margin-top: 7px;
+  width: 200px;
+  background-color: white;
+  margin-right: 100px;
+}
+
+.image-capture-wrapper .image-container .calculation span {
+  position: absolute;
+  top: 61px;
+  left: 140px;
+  font-size: 10px;
+}
+
+.image-capture-wrapper .slider-container {
+  height: 100%;
+  width: 20px;
+  position: relative;
+}
+
+.image-capture-wrapper .slider-container .slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  cursor: pointer;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 516px;
+  height: 10px;
+  outline: none;
+  position: absolute;
+  top: 268px;
+  right: -198px;
+  background: #bebdbd;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 15px;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.image-capture-wrapper .slider-container .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  width: 35px;
+  height: 25px;
+  border-radius: 50px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background: url("../../Images/point.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.image-capture-wrapper .slider-container .slider::-moz-range-thumb {
+  border: 0;
+  width: 35px;
+  height: 25px;
+  transform: rotate(-90deg);
+  border-radius: 50px;
+  background: url("../../Images/point.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Result.module.css.map */

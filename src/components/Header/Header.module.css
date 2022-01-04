@@ -1,0 +1,109 @@
+.header {
+  width: 100%;
+  height: calc(100vh - 87vh);
+}
+
+.header-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.logo-wrapper {
+  width: 33%;
+}
+
+.product-wrapper {
+  text-align: center;
+  width: 33%;
+  padding-bottom: 5px;
+}
+
+.product-wrapper .heading {
+  font-size: 1rem;
+  font-weight: 600;
+  height: 44px;
+}
+
+.product-wrapper .heading .sub-heading {
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+
+.school-option {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.school-option span {
+  font-size: 0.8rem;
+}
+
+.school-option .formControl {
+  width: 30%;
+  height: 40%;
+}
+
+.school-option .formControl .school-Selection {
+  font-size: 0.8rem;
+}
+
+.client-wrapper {
+  width: 33%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-wrapper .accountMenu {
+  margin-right: 2rem;
+  -webkit-box-shadow: 4px 4px 8px 0 #dddddd;
+          box-shadow: 4px 4px 8px 0 #dddddd;
+  border-radius: 50%;
+}
+
+.client-wrapper .login-btn {
+  -webkit-box-shadow: 4px 4px 8px 0 #ddd;
+          box-shadow: 4px 4px 8px 0 #ddd;
+  margin-right: 2rem;
+  padding: 8px;
+}
+
+.client-wrapper .widgets-btn {
+  -webkit-box-shadow: 4px 4px 8px 0 #ddd;
+          box-shadow: 4px 4px 8px 0 #ddd;
+  margin-right: 2rem;
+  padding: 8px;
+}
+
+.client-image {
+  display: block;
+  margin-left: auto;
+  padding-right: 5px;
+  width: 120px;
+  height: 100%;
+}
+
+.image {
+  width: 200px;
+  height: 100%;
+}
+/*# sourceMappingURL=Header.module.css.map */

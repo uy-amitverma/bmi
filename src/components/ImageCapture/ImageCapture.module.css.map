@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EAEN,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,MAAM;EACX,IAAI,EAAE,IAAI;CACX",
+    "sources": [
+        "ImageCapture.module.scss"
+    ],
+    "names": [],
+    "file": "ImageCapture.module.css"
+}

@@ -1,0 +1,13 @@
+.student-data-wrapper {
+    .student-data {
+        display: flex;
+        margin: 5px;
+        .label {
+            margin: 5px;
+            width: 35%;
+        }
+        select {
+            width: 50%;
+        }
+    }
+}

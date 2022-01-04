@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  height: calc(100vh - 87vh);
+}
+
+.header-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  // padding: 5px;
+}
+
+.logo-wrapper {
+  width: 33%;
+}
+
+.product-wrapper {
+  text-align: center;
+  width: 33%;
+  padding-bottom: 5px;
+  .heading {
+    font-size: 1rem;
+    font-weight: 600;
+    height: 44px;
+    .sub-heading {
+      font-size: 0.9rem;
+      font-weight: 450;
+    }
+  }
+}
+.school-option {
+  width: 100%;
+  align-items: center;
+  span {
+    font-size: 0.8rem;
+  }
+  .formControl {
+    width: 30%;
+    height: 40%;
+    .school-Selection {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.client-wrapper {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  .accountMenu {
+    margin-right: 2rem;
+    box-shadow: 4px 4px 8px 0 rgb(221, 221, 221);
+    border-radius: 50%;
+  }
+  .login-btn {
+    box-shadow: 4px 4px 8px 0 #ddd;
+    margin-right: 2rem;
+    padding: 8px;
+    .login-icon {
+    }
+  }
+  .widgets-btn{ 
+    box-shadow: 4px 4px 8px 0 #ddd;
+    margin-right: 2rem;
+    padding: 8px;
+    .widgets-icon {
+      // margin-right: 1rem;
+      // box-shadow: 4px 4px 8px 0 #ddd;
+      // cursor: pointer;
+    }
+
+  }
+}
+
+.client-image {
+  display: block;
+  margin-left: auto;
+  padding-right: 5px;
+  width: 120px;
+  height: 100%;
+}
+
+.image {
+  width: 200px;
+  height: 100%;
+}
