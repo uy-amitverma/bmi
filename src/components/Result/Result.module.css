@@ -12,52 +12,6 @@
   margin-left: -44px;
 }
 
-.image-capture-wrapper .image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 89%;
-}
-
-.image-capture-wrapper .image-container .weightImg {
-  width: 400px;
-}
-
-.image-capture-wrapper .image-container .calculation {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  width: 50%;
-  height: 40%;
-}
-
-.image-capture-wrapper .image-container .calculation .calculationImg {
-  width: 200px;
-  padding-bottom: 30px;
-}
-
-.image-capture-wrapper .image-container .calculation .cloudImg {
-  margin-top: 7px;
-  width: 200px;
-  background-color: white;
-  margin-right: 100px;
-}
-
-.image-capture-wrapper .image-container .calculation span {
-  position: absolute;
-  top: 61px;
-  left: 140px;
-  font-size: 10px;
-}
-
 .image-capture-wrapper .slider-container {
   height: 100%;
   width: 20px;
@@ -111,5 +65,61 @@
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+.image-capture-wrapper .info-container {
+  width: 90%;
+  height: 100%;
+}
+
+.image-capture-wrapper .info-container .bmi-section {
+  width: 100%;
+}
+
+.image-capture-wrapper .info-container .bmi-section .bmiScale {
+  width: 86%;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.image-capture-wrapper .info-container .name-weight-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .weight-wrapper {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .weight-wrapper .weightCloud {
+  width: 130px;
+  position: absolute;
+  left: 141px;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .weight-wrapper .weightImg {
+  width: 200px;
+  margin-top: 4rem;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .name-wrapper {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .name-wrapper .cloudImg {
+  width: 100px;
+  position: absolute;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .name-wrapper .calculationImg {
+  width: 200px;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=Result.module.css.map */
