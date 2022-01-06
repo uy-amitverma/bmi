@@ -10,6 +10,7 @@
   height: 100%;
   width: 15%;
   margin-left: -44px;
+  z-index: 1;
 }
 
 .image-capture-wrapper .slider-container {
