@@ -3,33 +3,21 @@ import CheckIcon from "@mui/icons-material/Check";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import { useState } from "react";
 
-const Instructions = () => {
-  const [proceedToImageCapture, setProceedToImageCapture] = useState(false);
-  const [heightCaptured, setHeightCaptured] = useState(false);
-  const [weightCaptured, setWeightCaptured] = useState(false);
-  const [studentIdentified, setStudentIdentified] = useState(false);
-  const run = () => {
-    const id1 = setInterval(() => {
-      setProceedToImageCapture(true);
-    }, 5000);
-    const id2 = setInterval(() => {
-      setStudentIdentified(true);
-    }, 5000);
-    const id3 = setInterval(() => {
-      setHeightCaptured(true);
-    }, 5000);
-    const id4 = setInterval(() => {
-      setWeightCaptured(true);
-    }, 5000);
-  };
-  run();
+const Instructions = (props) => {
+  const {
+    videoFeed,
+    heightCaptured,
+    weightCaptured,
+    studentIdentified,
+  } = props;
+
   return (
     <>
       <div className={styles.steps}>
         <h2>Instructions</h2>
         <div className={styles["capture-data-container"]}>
           <div className={styles.step}>
-            {proceedToImageCapture ? (
+            {videoFeed ? (
               <CheckIcon />
             ) : (
               <RadioButtonUncheckedIcon />
@@ -37,7 +25,7 @@ const Instructions = () => {
             <span className={styles.heading}>Image capture</span>
           </div>
           <div className={styles.step}>
-            {proceedToImageCapture && studentIdentified ? (
+            {videoFeed && studentIdentified ? (
               <CheckIcon />
             ) : (
               <RadioButtonUncheckedIcon />
@@ -61,5 +49,10 @@ const Instructions = () => {
     </>
   );
 };
-
+Instructions.defaultProps = {
+  videoFeed: false,
+  heightCaptured: false,
+  weightCaptured: false,
+  studentIdentified: false,
+};
 export default Instructions;

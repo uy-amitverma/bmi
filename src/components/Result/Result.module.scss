@@ -14,16 +14,16 @@
     // border: 1px solid black;
     position: relative;
     .slider {
-      -webkit-appearance: none;
-      appearance: none;
-      cursor: pointer;
-      transform: rotate(-90deg);
       width: 516px;
       height: 10px;
-      outline: none;
-      position: absolute;
       top: 268px;
       right: -198px;
+      position: absolute;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      transform: rotate(-90deg);
+      outline: none;
       background: rgb(190, 189, 189);
       outline: none;
       opacity: 0.7;
@@ -62,10 +62,40 @@
     height: 100%;
     .bmi-section {
       width: 100%;
+      position: relative;
+      .bmiText {
+        position: absolute;
+        top: 96px;
+        left: 87px;
+        font-size: 56px;
+        color: #f55d02;
+        z-index: 1;
+      }
+      .bmiContainCircle {
+        position: absolute;
+        width: 158px;
+        top: 59px;
+        left: 62px;
+      }
+      .bmi-slider {
+        position: absolute;
+        top: 86px;
+        width: 490px;
+        cursor: pointer;
+        left: 193px;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        background: #f1f1f1;
+        opacity: 0.7;
+        border-radius: 15px;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
       .bmiScale {
         width: 86%;
-        position: relative;
         margin-left: 2rem;
+        margin-top: 1rem;
       }
     }
     .name-weight-container {
@@ -76,10 +106,17 @@
         width: 50%;
         height: 100%;
         position: relative;
+        span {
+          position: absolute;
+          top: 30px;
+          right: 177px;
+          z-index: 1;
+        }
         .weightCloud {
           width: 130px;
           position: absolute;
           left: 141px;
+          z-index: 0.5;
         }
         .weightImg {
           width: 200px;
@@ -90,14 +127,24 @@
         width: 50%;
         height: 100%;
         position: relative;
-        .cloudImg {
-          width: 100px;
+        span {
           position: absolute;
-          
+          z-index: 1;
+          top: 47px;
+          left: 60px;
+          font-size: 15px;
+          width: 160px;
+        }
+        .cloudImg {
+          width: 300px;
+          position: absolute;
+          right: 134px;
+          z-index: 0.5;
         }
         .calculationImg {
           width: 200px;
           margin-top: 5rem;
+          margin-left: 11rem;
         }
       }
     }

@@ -19,18 +19,18 @@
 }
 
 .image-capture-wrapper .slider-container .slider {
+  width: 516px;
+  height: 10px;
+  top: 268px;
+  right: -198px;
+  position: absolute;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  cursor: pointer;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  width: 516px;
-  height: 10px;
   outline: none;
-  position: absolute;
-  top: 268px;
-  right: -198px;
   background: #bebdbd;
   outline: none;
   opacity: 0.7;
@@ -74,12 +74,47 @@
 
 .image-capture-wrapper .info-container .bmi-section {
   width: 100%;
+  position: relative;
+}
+
+.image-capture-wrapper .info-container .bmi-section .bmiText {
+  position: absolute;
+  top: 96px;
+  left: 87px;
+  font-size: 56px;
+  color: #f55d02;
+  z-index: 1;
+}
+
+.image-capture-wrapper .info-container .bmi-section .bmiContainCircle {
+  position: absolute;
+  width: 158px;
+  top: 59px;
+  left: 62px;
+}
+
+.image-capture-wrapper .info-container .bmi-section .bmi-slider {
+  position: absolute;
+  top: 86px;
+  width: 490px;
+  cursor: pointer;
+  left: 193px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+  background: #f1f1f1;
+  opacity: 0.7;
+  border-radius: 15px;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .image-capture-wrapper .info-container .bmi-section .bmiScale {
   width: 86%;
-  position: relative;
   margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .image-capture-wrapper .info-container .name-weight-container {
@@ -96,10 +131,18 @@
   position: relative;
 }
 
+.image-capture-wrapper .info-container .name-weight-container .weight-wrapper span {
+  position: absolute;
+  top: 30px;
+  right: 177px;
+  z-index: 1;
+}
+
 .image-capture-wrapper .info-container .name-weight-container .weight-wrapper .weightCloud {
   width: 130px;
   position: absolute;
   left: 141px;
+  z-index: 0.5;
 }
 
 .image-capture-wrapper .info-container .name-weight-container .weight-wrapper .weightImg {
@@ -113,13 +156,25 @@
   position: relative;
 }
 
-.image-capture-wrapper .info-container .name-weight-container .name-wrapper .cloudImg {
-  width: 100px;
+.image-capture-wrapper .info-container .name-weight-container .name-wrapper span {
   position: absolute;
+  z-index: 1;
+  top: 47px;
+  left: 60px;
+  font-size: 15px;
+  width: 160px;
+}
+
+.image-capture-wrapper .info-container .name-weight-container .name-wrapper .cloudImg {
+  width: 300px;
+  position: absolute;
+  right: 134px;
+  z-index: 0.5;
 }
 
 .image-capture-wrapper .info-container .name-weight-container .name-wrapper .calculationImg {
   width: 200px;
   margin-top: 5rem;
+  margin-left: 11rem;
 }
 /*# sourceMappingURL=Result.module.css.map */
